@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">CountdownTimerApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="timeValue">Enter the time to get the time difference between it and the current time</string>
+    <string name="hour">hour</string>
+    <string name="min">minute</string>
+    <string name="second">second</string>
+    <string name="ok">Ok</string>
+    <string name="invalid_hours">invalid hours!</string>
+    <string name="invalid_minute">invalid minute!!</string>
+    <string name="invalid_second">invalid second!!</string>
+    <string name="invalid_time">invalid time!!</string>
+    <string name="remainig">the remaining time</string>
+</resources>
