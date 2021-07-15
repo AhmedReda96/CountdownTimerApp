@@ -71,18 +71,17 @@ class TimerFragment : Fragment() {
                     val format = SimpleDateFormat("hh:mm:ss")
                     val date1 = format.parse(currentTime)
                     val date2 = format.parse(selectedTime)
-                    val mills = date1.time - date2.time
-                    Log.v("Data1", "" + date1.time)
-                    Log.v("Data2", "" + date2.time)
+                    val mills:Long = date1.time - date2.time
+                    val day=(mills/ (1000 * 60 * 60 * 24)).toInt()
                     val hours = (mills / (1000 * 60 * 60)).toInt()
                     val mins = (mills / (1000 * 60)).toInt() % 60
                     val sec = (mills / (1000)).toInt() % 60
 
-                    val diff = "$hours:$mins:$sec"
+                    val diff = "-$day:$hours:$mins:$sec"
 
 
                     timerTV.text = diff
-                    Log.d("TAG", "testTag: $diff")
+                    Log.d("TAG", "testTag: $day")
 
                 } catch (e: Exception) {
                     e.printStackTrace()

@@ -12,4 +12,5 @@
     <string name="invalid_second">invalid second!!</string>
     <string name="invalid_time">invalid time!!</string>
     <string name="remainig">the remaining time</string>
+    <string name="day">day</string>
 </resources>

@@ -12,7 +12,7 @@ class StartFragmentVM : ViewModel() {
 
     fun validate(hour: String, minute: String, seconds: String): Boolean {
         var unitTestValidation: Boolean = true
-        if (hour.isEmpty() || hour.toInt() > 24) {
+        if (hour.isEmpty() ) {
             validateMD.value = "invalid hours"
             Log.d(TAG, "validate: invalid hours")
             unitTestValidation=false
